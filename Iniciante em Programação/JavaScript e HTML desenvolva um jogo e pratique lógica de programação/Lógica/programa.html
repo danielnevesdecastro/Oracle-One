@@ -1,7 +1,19 @@
 <meta charset="UTF-8">
 
 <script>
+
 	
+	function pulaLinha(){
+
+		document.write("<br>"+"<br>");
+	
+	}
+	//Função com parametros 
+	function mostra (texto) {
+		document.write(texto)
+		pulaLinha();
+	}
+
 	document.write("Daniel nasceu em: <br>"+ (2023-29));
 
 	document.write("<br>divisão:<br>");
@@ -15,4 +27,17 @@
 	document.write("Ele tem "+ (ano - 1994) + " Anos<br>");
 	ano = 2024;
 	document.write("Ele tem "+ (ano - 1995) + " Anos<br>");
+
+	var media = (39 + 20 + 41 )/3;
+	pulaLinha();
+	document.write("Média de idades : "+ Math.round(media));
+	pulaLinha();
+
+	//Função com parametros 
+	mostra("Ueba !")
+	mostra("Aeho !")
+	mostra();
+
+
+
 </script>
