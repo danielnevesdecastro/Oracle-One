@@ -10,8 +10,9 @@ function mostra (mensagem) {
 	br();
 } 
 function calculoImc (nome, peso, altura){
-	var imc = Math.round (peso / (altura * altura ));
-	return " IMC "+nome+" : " + imc +"<hr>";//retorno
+	
+	return " IMC "+nome+" : " + (imc = Math.round (peso / (altura * altura ))) 
+	+"<hr>";//retorno
 }
 var imcDaniel = calculoImc("Daniel ",85,1.95);
 var imcAmigo = calculoImc("Amigo ",95,1.70);
