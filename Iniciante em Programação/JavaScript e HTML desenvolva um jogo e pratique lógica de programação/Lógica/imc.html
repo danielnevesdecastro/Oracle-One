@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+function br (){
+	document.write("<br><br>");
+}
+
+function mostra (mensagem) {
+	document.write("<big>"+mensagem+"</big>");
+	br();
+} 
+function calculoImc (nome, peso, altura){
+	var imc = Math.round (peso / (altura * altura ));
+	return " IMC "+nome+" : " + imc +"<hr>";//retorno
+}
+var imcDaniel = calculoImc("Daniel ",85,1.95);
+var imcAmigo = calculoImc("Amigo ",95,1.70);
+
+mostra(imcAmigo + imcDaniel);
+
+
+
+</script>
