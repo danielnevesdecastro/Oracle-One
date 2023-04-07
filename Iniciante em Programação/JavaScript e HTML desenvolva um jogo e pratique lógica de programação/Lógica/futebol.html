@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+function br (){
+	document.write("<br>");
+}
+
+function mostra (mensagem) {
+	document.write("<big>"+mensagem+"</big>");
+	br();
+} 
+
+function desempenhoTime(desempenho){
+	return "Seu time está "+desempenho+", comparado ao ano passado ! ";
+}
+
+
+var vitorias = prompt("Nº de Vitórias: ");
+var empates = parseInt(prompt("Nº de Empates"));//converte String pra numero
+
+var pontos = parseInt(vitorias * 3) + (empates);
+
+mostra("Os pontos do seu time:" + pontos );
+mostra("<hr>");
+
+var desempenho;
+
+if (pontos > 28){
+	desempenho = "Melhor";
+}
+if (pontos < 28){
+	desempenho = "Pior";
+}
+if (pontos == 28){
+	desempenho = "Igualzinho";
+}
+
+mostra(desempenhoTime(desempenho));
+
+
+
+</script>
