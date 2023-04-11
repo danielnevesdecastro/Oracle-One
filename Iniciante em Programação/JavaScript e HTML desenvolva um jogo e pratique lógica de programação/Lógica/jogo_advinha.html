@@ -18,20 +18,34 @@ function sorteia(numero){
 var numero = parseInt(prompt("Digite um numero máximo: "));
 var numeroPensado = sorteia(numero);
 console.log(numeroPensado);// exibe no console 
-var chute = parseInt(prompt("Digite seu chute !!"));
 
-var chutemsg;
+var chances = 1;
 
-if(chute != numeroPensado && chute > numeroPensado ){
+while (chances <= 3 ){
+
+	var chute = parseInt(prompt("Digite seu chute !!"));
+
+	var chutemsg;
+
+	if(chute != numeroPensado && chute > numeroPensado ){
 	chutemsg = "Seu chute é MAIOR que o número pensado !!! ...";
-}else if (chute != numeroPensado && chute < numeroPensado){
+	}else if (chute != numeroPensado && chute < numeroPensado){
 	chutemsg = "Seu chute é MENOR que o número pensado !!! ...";
-}else if (chute == numeroPensado){
+	}else if (chute == numeroPensado){
 	chutemsg = "Você Acertou!!"
+	alert(chutemsg);
+	break;
+	}
+
+	alert(chutemsg);
+
+	chances++;
+
 }
 
+mostra("Fim");
 
-mostra(chutemsg)
+
 
 
 

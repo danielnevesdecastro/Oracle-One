@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Verificar Segredo !</button>
+
+<script>
+	
+	var segredo = Math.round(Math.random() * 5);
+	var input = document.querySelector("input");
+	input.focus();
+
+	function verifica(){
+
+		if (input.value == segredo){//value pega o valor de input
+			alert("Você ACERTOU ! ");
+		}else {
+			alert("Você ERROU !!!");
+		}
+		input.value = "";
+		input.focus();//ganha foco na caixa de digitação
+	}
+
+	var button = document.querySelector("button");
+	button.onclick = verifica;//executar quando clica 
+
+
+</script>
