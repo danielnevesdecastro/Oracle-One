@@ -1,11 +1,45 @@
 <meta charset="UTF-8">
 
+<hr>
 <input/>
 <button>Verificar Segredo !</button>
 
 <script>
 	
-	var segredos = [5,7,10,2,9];
+	function sorteia(){
+		return Math.round(Math.random() * 10);
+	}
+
+	function sorteiaNumeros( qtd ){
+		var segredos = [];
+		var i = 0;
+		while (i < qtd ){
+			var numeroRandom = sorteia();
+			var numeroRepeat = false;
+			if (numeroRandom !== 0){
+			
+				for (var j = 0 ; j < segredos.length; j ++){
+					if (numeroRandom == segredos[j]){
+					numeroRepeat = true;
+					break;
+				}
+			}
+			
+			if (numeroRepeat == false){
+				segredos.push(numeroRandom);
+				i ++;
+			} 
+			}
+		}
+			return segredos;
+	}
+
+		
+	
+
+	var segredos = sorteiaNumeros(3);
+	console.log(segredos);
+
 	var input = document.querySelector("input");
 	input.focus();
 
