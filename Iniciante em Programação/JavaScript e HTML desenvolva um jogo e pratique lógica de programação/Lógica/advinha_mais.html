@@ -5,15 +5,22 @@
 
 <script>
 	
-	var segredo = Math.round(Math.random() * 5);
+	var segredos = [5,7,10,2,9];
 	var input = document.querySelector("input");
 	input.focus();
 
 	function verifica(){
 
-		if (input.value == segredo){//value pega o valor de input
-			alert("Você ACERTOU ! ");
-		}else {
+		var encontrado = false;
+		for (var i = 0 ; i < segredos.length ;i++){
+			if (input.value == segredos[i]){//value pega o valor de input
+				alert("Você ACERTOU ! ");
+				encontrado = true;
+				break;
+			}
+		}
+
+		if ( encontrado == false) {
 			alert("Você ERROU !!!");
 		}
 		input.value = "";
