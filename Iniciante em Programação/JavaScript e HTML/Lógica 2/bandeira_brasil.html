@@ -12,13 +12,14 @@
 	pincel.fillRect(0,0,600,400);
 
 	//losango
-	pincel.fillStyle = "yellow"
+	pincel.fillStyle = "yellow";
 	pincel.beginPath();
 	pincel.moveTo(300,50);
 	pincel.lineTo(35,200);
 	pincel.lineTo(300,350);
 	pincel.lineTo(565,200);
 	pincel.fill();
+	
 	/*
 	pincel.fillStyle = "yellow"
 	pincel.beginPath();
@@ -28,12 +29,29 @@
 	pincel.fill();
 	*/
 
-	
 	//circulo
 	pincel.fillStyle = "darkblue";
 	pincel.beginPath();
 	pincel.arc(300,200,100,0,2*3.14);
 	pincel.fill();
+	
+	//faixa	
+	pincel.fillStyle = "white";
+	pincel.beginPath();
+	pincel.moveTo(305,180);
+	pincel.lineTo(198,190);
+	pincel.lineTo(199,215);
+	pincel.lineTo(305,205);
+	pincel.lineTo(401,200);
+	pincel.lineTo(399,175);
+	pincel.fill();
+
+	//letreiro
+	pincel.fillStyle = "darkgreen"
+	pincel.font = "17px ArialBlack";
+	pincel.fillText("ORDEM", 200, 203 );
+	pincel.fillText("E", 280, 200 );
+	pincel.fillText("PROGRESSO", 300, 196 );
 	
 
 
