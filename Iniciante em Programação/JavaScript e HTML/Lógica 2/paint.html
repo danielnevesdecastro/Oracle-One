@@ -29,6 +29,7 @@
 
 	}
 	
+	/*
 	function desenhaOn(){
 		desenha = true;
 	}
@@ -43,6 +44,12 @@
 
 	tela.onmousedown = desenhaOn; // mouse clicado
 	tela.onmouseup = desenhaOf; // mouse levantado
+	*/
+
+	//função lambda
+
+	tela.onmousedown = function(){ desenha = true;	}
+	tela.onmouseup = function(){ desenha = false;	}
 	tela.onmousemove = desenhacircle; // mover do mouse 
 
 
