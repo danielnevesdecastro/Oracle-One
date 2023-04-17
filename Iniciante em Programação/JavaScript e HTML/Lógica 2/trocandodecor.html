@@ -15,9 +15,10 @@
 		var x = evento.pageX - tela.offsetLeft;
 		var y = evento.pageY - tela.offsetTop;
 
-		pincel.fillStyle = "purple";
+
+		pincel.fillStyle = coresCircle[i];
 		pincel.beginPath();
-		pincel.arc(x , y, 5, 0,2 * 3.14)
+		pincel.arc(x , y, 10, 0,2 * 3.14)
 		pincel.fill();
 
 		//console.log(evento);
@@ -26,9 +27,25 @@
 
 	}
 
-	var coresCircle = ["blue", "red", "green"]
+	var i = 0;
+	function mudaCor(){
+		i++;
+		if (i >= coresCircle.length) {
+      		i = 0;
+    	}
+		//alert("funcionou !!");
+		return false ; // para nao retorna menu de contexto
+	}
 
+	var coresCircle = ["blue", "red", "green"];
+	
+	tela.oncontextmenu = mudaCor;
 	tela.onclick = desenhacircle; // sem paretenses , jogando a função pra dentro do on click
 
 
+
+
 </script>
+
+
+
