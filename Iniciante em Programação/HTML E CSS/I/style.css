@@ -1,8 +1,13 @@
-h1 {
-	text-align: center;
-
+body{
+	background: #cccccc;
 }
 
-body{
-	background: #d49898;
+h1 {
+	text-align: center;
+	
+
+}
+/* aplicando css em uma estrutura especifica , dentro de em : dentro de strong  */
+em strong{
+	color:red;
 }
