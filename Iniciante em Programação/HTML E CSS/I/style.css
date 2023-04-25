@@ -3,12 +3,19 @@ body{
 	text-align: center;
 }
 
+#banner{
+	width: 100%;
+}
+
 h1 {
 	color: darkblue;
+	height: 60px;
+	border: 10px solid #000055;
+	padding-top: 20px;
+	margin: 40px;
 }
-p  {
-	
-}
+
+
 
 #missao{
 	font-size: 20px;
