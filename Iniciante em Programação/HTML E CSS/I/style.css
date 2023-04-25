@@ -1,11 +1,17 @@
 body{
-	background: #bbbbbb;
+	background: #cccccc;
+	text-align: center;
 }
 
 h1 {
-	text-align: center;
+	color: darkblue;
+}
+p  {
 	
+}
 
+#missao{
+	font-size: 20px;
 }
 /* aplicando css em uma estrutura especifica , dentro de em : dentro de strong  */
 em strong{
