@@ -1,18 +1,20 @@
 body{
-	background: #cccccc;
+	
 }
 
 #banner{
 	width: 100%;
 }
 
-h1 {
-	text-align: center;
+.principal{
+	background: #cccccc;
+	padding: 30px;
+}
+
+.Titulo {
 	color: darkblue;
-	height: 60px;
-	border: 10px solid #000055;
-	padding-top: 20px;
-	margin: 40px;
+	padding-left: 20px;
+
 }
 
 p {
@@ -22,6 +24,11 @@ p {
 #missao{
 	font-size: 20px;
 }
+
+.h-center{
+	text-align: center;
+}
+
 /* aplicando css em uma estrutura especifica , dentro de em : dentro de strong  */
 em strong{
 	color:red;
@@ -29,4 +36,22 @@ em strong{
 
 .item{
 	font-style: italic;
+}
+
+
+.beneficios{
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+
+
+ul{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+.beneficiosImagem{
+	width: 50%;
 }
