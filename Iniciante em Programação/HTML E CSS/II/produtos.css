@@ -20,7 +20,8 @@ nav {
 
 nav li{
 	display: inline;
-	margin: 0 0 0 15px;
+	margin: 0 0 0 20px;
+
 }
 
 nav a{
@@ -33,12 +34,16 @@ nav a{
 }
 
 nav a:hover{
-	color: #ffffff;
-	text-decoration: underline;
-
+	color: #000000;
+	border: 1px solid #000000;
+	background: #ffffff;
+	border-radius: 3px;
 }
 
-
+nav a:active{
+	color: #ffffff;
+	background:#000000 ;
+}
 
 .produtos{
 	width: 940px;
@@ -57,7 +62,7 @@ nav a:hover{
 	box-sizing: border-box;
 	/*bordas*/
 	border: 2px solid #000000;
-	border-radius: 100px;
+	border-radius: 20px;
 	
 }
 
