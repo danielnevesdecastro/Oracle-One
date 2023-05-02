@@ -135,3 +135,8 @@ form label, form p{
 .checkbox{
 	margin: 20px 0;
 }
+
+.caixa-horario{
+	padding: 5px 10px;
+	font-size: 15px;
+}
