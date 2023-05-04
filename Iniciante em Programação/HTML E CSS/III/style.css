@@ -140,3 +140,27 @@ form label, form legend{
 	padding: 5px 10px;
 	font-size: 15px;
 }
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius:10px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background: red;
+	transform:scale(1.2);
+
+}
+
+.enviar:active{
+	transition: 0s background;
+	background: green;
+}
