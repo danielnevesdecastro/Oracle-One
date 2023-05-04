@@ -1,3 +1,6 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 
 header{
 	background: #bbbbbb;
@@ -8,7 +11,6 @@ header{
 	position: relative;
 	width: 940px;
 	margin: 0  auto ;
-
 
 }
 
@@ -110,12 +112,14 @@ footer {
 }
 
 main{
-	width: 940px;
-	margin: 0 auto;
+	
 }
 
 form {
-	margin: 40px 0;
+	width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
 }
 
 form label, form legend{
@@ -182,5 +186,108 @@ thead{
 td , th{
 	border: 2px solid #000000;
 	padding: 15px 25px;
+}
+
+/*css da Home*/
+.banner{
+	width: 100%;
+	border-top: 10px solid black ;
+	border-bottom: 10px solid black;
+}
+
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.titulo-principal:first-letter{
+	font-weight: bold;
+}
+
+.titulo-principal:after{
+	content:" ]" ;
+
+}
+
+.titulo-principal:before{
+	content: "[ ";
+}
+
+.principal{
+	width: 940px;
+	margin: 0 auto;
+	padding: 3em 0;
+	background: #FEFEFE;
+}
+
+.principal p{
+	margin: 0 0 1em;
+}
+
+.principal strong{
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios{
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+
+}
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.item{
+	line-height: 2em;
+}
+
+
+
+.item:before{
+	content: "✦   ";
+}
+.imagem-beneficios{
+	width: 60%;S
+}
+
+.mapa{
+	padding: 3em 0;
+	background: linear-gradient(#fefefe ,#888888 80%);
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.video{
+	width: 560px;
+	margin: 2em auto;
+	border: 2px solid black;
 }
 
