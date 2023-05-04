@@ -166,8 +166,8 @@ form label, form legend{
 }
 
 table{
-	margin: 20px 0 40px;
-	
+	margin: auto auto 20px auto;
+
 
 }
 
@@ -179,6 +179,6 @@ thead{
 
 td , th{
 	border: 2px solid #000000;
-	padding: 8px 15px;
+	padding: 15px 25px;
 }
 
