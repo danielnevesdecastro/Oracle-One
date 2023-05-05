@@ -37,7 +37,6 @@ nav a{
 
 nav a:hover{
 	color: #000000;
-	
 	background: #ffffff;
 	border-radius: 3px;
 }
@@ -54,7 +53,6 @@ nav a:active{
 }
 
 .produtos li{
-
 	display: inline-block;
 	text-align: center;
 	width: 30%;
@@ -170,11 +168,9 @@ form label, form legend{
 }
 
 table{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
+	
+	margin:20px auto 20px auto;
+	
 }
 
 thead{
@@ -184,6 +180,7 @@ thead{
 }
 
 td , th{
+	
 	border: 2px solid #000000;
 	padding: 15px 25px;
 }
@@ -202,9 +199,7 @@ td , th{
 	clear: left;
 }
 
-.titulo-principal:first-letter{
-	font-weight: bold;
-}
+
 
 .titulo-principal:after{
 	content:" ]" ;
