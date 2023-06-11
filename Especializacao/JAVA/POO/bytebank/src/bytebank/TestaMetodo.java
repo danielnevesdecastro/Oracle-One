@@ -24,6 +24,8 @@ public class TestaMetodo {
 		System.out.println("Saldo Conta 2: " + contaDois.saldo);
 		
 		
+		contaUm.titular = "Daniel";
+		System.out.println(contaUm.titular);
 		
 		
 	}
