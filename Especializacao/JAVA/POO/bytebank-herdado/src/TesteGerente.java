@@ -2,7 +2,9 @@
 public class TesteGerente {
 
 	public static void main(String[] args) {
-
+		
+		Autenticavel gerente = new Gerente();
+		
 		Gerente g1 = new Gerente();
 		g1.setNome("Daniel Neves");
 		g1.setCpf("045045045-48");
