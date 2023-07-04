@@ -3,8 +3,13 @@ public class TesteSaca {
 	public static void main(String[] args) {
 		Conta conta = new ContaCorrente(123, 321);
 		conta.deposita(200.0);
-		conta.saca(190.0);
-		
-		System.out.printf("%.2f",conta.getSaldo());
+
+		try {
+			conta.saca(210.0);
+		} catch (SaldoInsuficienteException saldoEx) {
+			System.out.println("Operação Negada : \n" + saldoEx.getMessage());
+		}
+
+		System.out.printf("%.2f", conta.getSaldo());
 	}
 }
