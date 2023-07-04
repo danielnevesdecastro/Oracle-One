@@ -1,5 +1,5 @@
 
-public class Conexao {
+public class Conexao implements AutoCloseable {
 
 	public Conexao() {
 		System.out.println("Abrindo conexao ...");
@@ -7,10 +7,14 @@ public class Conexao {
 
 	public void leDados() {
 		System.out.println("Recebendo dados ...");
-		throw new IllegalStateException();//Indica objeto com estado inconsistente; 
+		throw new IllegalStateException();// Indica objeto com estado inconsistente;
 	}
 
-	public void fecha() {
+
+	@Override
+	public void close() {
 		System.out.println("Fechando conexao.");
+		
+
 	}
 }
