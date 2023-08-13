@@ -1,6 +1,8 @@
-import modelo.ContaCorrente;
-import modelo.ContaPoupanca;
-import modelo.SaldoInsuficienteException;
+package br.com.banco.teste;
+
+import br.com.banco.modelo.ContaCorrente;
+import br.com.banco.modelo.ContaPoupanca;
+import br.com.banco.modelo.SaldoInsuficienteException;
 
 public class TesteContas {
 

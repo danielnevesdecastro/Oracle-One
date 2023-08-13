@@ -1,4 +1,4 @@
-package modelo;
+package br.com.banco.modelo;
 
 @SuppressWarnings("serial")
 public class SaldoInsuficienteException extends Exception {

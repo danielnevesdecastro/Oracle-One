@@ -1,6 +1,7 @@
-import modelo.CalculadorDeImposto;
-import modelo.ContaCorrente;
-import modelo.SeguroDeVida;
+package br.com.banco.teste;
+import br.com.banco.modelo.CalculadorDeImposto;
+import br.com.banco.modelo.ContaCorrente;
+import br.com.banco.modelo.SeguroDeVida;
 
 public class TesteTributaveis {
 	

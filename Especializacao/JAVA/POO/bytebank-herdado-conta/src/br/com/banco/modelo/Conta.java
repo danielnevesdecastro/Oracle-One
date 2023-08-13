@@ -1,4 +1,4 @@
-package modelo;
+package br.com.banco.modelo;
 
 public abstract class Conta {
 	protected double saldo;
