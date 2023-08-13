@@ -1,3 +1,6 @@
+import modelo.ContaCorrente;
+import modelo.ContaPoupanca;
+import modelo.SaldoInsuficienteException;
 
 public class TesteContas {
 

@@ -10,7 +10,7 @@ public class Conexao implements AutoCloseable {
 		throw new IllegalStateException();// Indica objeto com estado inconsistente;
 	}
 
-
+	
 	@Override
 	public void close() {
 		System.out.println("Fechando conexao.");

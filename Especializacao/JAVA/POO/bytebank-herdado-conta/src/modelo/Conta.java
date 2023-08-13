@@ -1,3 +1,4 @@
+package modelo;
 
 public abstract class Conta {
 	protected double saldo;
@@ -15,14 +16,14 @@ public abstract class Conta {
 
 	public abstract void deposita(double valor);
 
-	public void saca(double valor) throws SaldoInsuficienteException{
+	public void saca(double valor) throws SaldoInsuficienteException {
 		if (saldo < valor) {
 			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor:" + valor);
 		} else
 			this.saldo -= valor;
 	}
 
-	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException{
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
 		this.saca(valor);
 		destino.deposita(valor);
 
